@@ -27,13 +27,13 @@
   }
   
   #status {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	position: absolute;
 	left: 50%;
 	z-index: 1000;
 	top: 50%;
-	background-image: url('./img/icons8-sand-timer.gif');
+	/* background-image: url('./img/icons8-sand-timer.gif'); */
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;
