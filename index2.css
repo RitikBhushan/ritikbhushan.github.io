@@ -1,0 +1,271 @@
+@import url('styles.css');
+.about-first{
+    width: 100wh;
+    height: 100vh;
+    display:flex;
+}
+.top-heading::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px 220px;
+}
+.first-text{
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid black; */
+}
+.first-img{
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 50px;
+    perspective: 800px;
+}
+.card{
+    width: 350px;
+    height: 400px;
+    transform-style: preserve-3d ;
+    position: relative;
+    top: 55px;
+    left: 170px;
+    transition: .75s;
+    cubic-bezier: (0.4 ,0.03, 0.5, 0.9);
+}
+.card__image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    /* outline: 2px solid rgb(97, 81, 81); */
+    outline-offset: 5px;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+.card__image:nth-child(2),
+.card:hover{
+    transform: rotate3d(1,1,0,180deg);
+}
+.first-img p{
+    position: relative;
+    top: 90px;
+    text-align: center;
+    left: 40px;
+    font-size: 23px;
+}
+.heading h2{
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+.heading p{
+    font-size: 20px;
+    color:rgb(90, 90, 91) ;
+    letter-spacing: .5px;
+    padding-top: 35px;
+}
+.heading{
+    position: relative;
+    top: 10%;
+    left: 7%;
+}
+.welcome{
+    display: flex;
+}
+.welcome img{
+    width: 300px;
+}
+.welcome-text{
+    width: 50%;
+    height: 80vh;
+    /* border: 2px solid black; */
+}
+
+.welcome-img{
+    width: 40%;
+    height: 80vh;
+    /* border: 2px solid black; */
+    
+}
+.welcome img{
+    width: 250px;
+    position: relative;
+    left: 40%;
+}
+.welcome p{
+    font-size: 20px;
+    color:rgb(90, 90, 91) ;
+    letter-spacing: .5px;
+    padding-top: 45px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.guru{
+    display: flex;
+}
+.guru-img{
+    width: 40%;
+    height: 80vh;
+}
+.guru-text{
+    width: 50%;
+    height: 80vh;
+    padding-top:100px ;
+    padding-left: 40px;
+}
+.guru-img img{
+    width: 350px;
+    padding-top:60px ;
+    padding-left: 80px;
+}
+.guru-text h2{
+    font-size: 30px;
+}
+.guru-text p{
+    font-size: 19px;
+    color:rgb(90, 90, 91) ;
+    letter-spacing: .5px;
+    padding-top: 22px;
+}
+.welcome-img .barish{
+    width: 400px;
+    left: 20%;
+}
+.coder img{
+    width: 250;
+   height: 250px;
+
+}
+.coder{
+    width: 60%;
+    display: flex;
+}
+.coder .code-boy{
+    position: relative;
+    top: 190px;
+    left: 100px;
+}
+.coder .cloud{
+    position: relative;
+    /* top: 190px; */
+    left: 100px;
+}
+.coder p{
+    left: -98px;
+    top: 30px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.cod-text p{
+    position: relative;
+    left: 0px;
+    right: 20px;
+    margin-right: 20px;
+}
+.cricket img{
+    width: 500px;
+    left: 100px;
+}
+.welcome-text .rainy{
+	color: rgb(50, 130, 234);
+}
+@media screen and (max-width: 600px) {
+    .about-first{
+        width: 100wh;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .first-img{
+        width: auto;
+        height: 80vh;
+        perspective: 800px;
+    }
+    .card{
+     position: relative;
+    top: 0px;
+    left: 0px;
+    }
+    .first-img p{
+        position: relative;
+        top: 50px;
+        left: 0px;
+    }
+    .first-text{
+        width: auto;
+        height: auto;
+        /* border: 2px solid black; */
+    }
+    .heading{
+        position: relative;
+        top: 1%;
+        left: 0px;
+        
+        padding: 9px;
+    }
+    .heading p{
+        font-size: 18.6px;
+      
+    }
+    .welcome p {
+        left: 10px;
+        top: 110px;
+        font-size: 15px;
+        color: #432a14;
+    }
+    .welcome-img{
+        width: auto;
+    }
+    .welcome img {
+        width: 150px;
+        height: auto;
+        position: relative;
+        left: 0px;
+        top: 40px;
+    }
+    .welcome {
+        height: 65vh;
+    }
+    .guru-img{
+        width:50%;
+    }
+    .guru {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .guru-text p {
+        font-size: 18.5px;
+        
+    }
+    .guru-img {
+        width: auto;
+        height: auto;
+    }
+    .guru-img img {
+        width: 250px;
+        display: grid;
+        position: relative;
+        bottom: 40px;
+        place-items: CENTER;
+    }
+    .guru-text{
+        width: auto;
+        height: auto;
+        /* padding-top: 40px; */
+        padding-left: 10px;
+    }
+    .top-heading{
+        font-size: 2.5rem;
+        position: relative;
+        left: 10px;
+    }
+    .top-heading::after{
+        width: 140px;
+        margin: 10px 20px;
+    }
+    
+  }

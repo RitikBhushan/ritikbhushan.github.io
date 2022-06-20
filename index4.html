@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ritk_Bhushan - Portfolio</title>
+	<link rel="stylesheet" href="index4.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="wrapper_inner">
+			<div class="vertical_wrap">
+				<div class="backdrop"></div>
+				<div class="vertical_bar">
+					<div class="profile_info">
+						<div class="img_holder">
+							<img src="./img/pic-one.jpeg" alt="profile_pic">
+						</div>
+						<p class="title">Ritik Bhushan</p>
+						<p class="sub_title">ritikbhushanmain@gmail.com</p>
+					</div>
+					<ul class="menu">
+						<li class=" list"><a href="index.html">
+							<span class="icon"><i class="fas fa-home"></i></span>
+							<span class="text1"> <b> Profile</b></span>
+						</a></li>
+						<li class="list"><a id="item2" href="index2.html" >
+							<span class="icon"><i class="fas fa-file-alt"></i></span>
+							<span class="text2"><b> About me</b></span>
+						</a></li>
+						<li class="list"><a href="index3.html">
+							<span class="icon"><i class="fas fa-chart-pie"></i></span>
+							<span class="text3"><b> Education</b></span>
+						</a></li>
+						<li class="list active"><a href="index4.html">
+							<span class="icon"><i class="fas fa-user"></i></span>
+							<span class="text4"><b> Skill</b></span>
+						</a></li>
+						<li class="list"><a href="index5.html">
+							<span class="icon"><i class="fas fa-cog"></i></span>
+							<span class="text5"><b> Projects </b></span>
+						</a></li>
+						<li class="list"><a href="index6.html">
+							<span class="icon"><i class="fas fa-cog"></i></span>
+							<span class="text5"><b> Contact me </b></span>
+						</a></li>
+					</ul>
+
+					<ul class="social">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main_container">
+				<div class="top_bar">
+					<div class="hamburger">
+						<i class="fas fa-bars">
+						</i>
+					</div>
+					<div class="logo">
+						<span class="icon"><i class="fas fa-user"></i></span>
+						Bhushan <span>Portfolio</span>
+					</div>
+				</div>
+				
+				<div class="container container1" style="overflow-y:scroll; overflow-x:hidden; height:100vh;">
+
+
+
+
+					<div class="skills_section">
+						<div class="skills_head">
+							<h2>My <span>Skills</span></h2>
+							<p>Here is my skills to represent my Expertise</p>
+						</div>
+				
+						<div class="skills_main">
+							<div class="skill_bar">
+								<div class="info">
+									<p>HTML</p>
+									<P>90%</P>
+								</div>
+								<div class="bar">
+									<span class="html"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>CSS</p>
+									<P>75%</P>
+								</div>
+								<div class="bar">
+									<span class="css"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>C++</p>
+									<P>75%</P>
+								</div>
+								<div class="bar">
+									<span class="sass"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>Java Script</p>
+									<P>65%</P>
+								</div>
+								<div class="bar">
+									<span class="js"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>React js</p>
+									<P>60%</P>
+								</div>
+								<div class="bar">
+									<span class="react"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>Java</p>
+									<P>60%</P>
+								</div>
+								<div class="bar">
+									<span class="node"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>Android Studio</p>
+									<P>50%</P>
+								</div>
+								<div class="bar">
+									<span class="express"></span>
+								</div>
+							</div>
+							<div class="skill_bar">
+								<div class="info">
+									<p>PHP & mySQL</p>
+									<P>60%</P>
+								</div>
+								<div class="bar">
+									<span class="mongo"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+
+
+
+
+					
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	<script>
+		var hamburger = document.querySelector(".hamburger");
+		var wrapper = document.querySelector(".wrapper");
+		var backdrop = document.querySelector(".backdrop");
+		let list = document.querySelectorAll('.list');
+
+
+
+		for (let i = 0; i < list.length; i++) {
+			list[i].onclick = function () {
+				let j = 0;
+				while (j < list.length) {
+					list[j++].className = 'list'
+				}
+				list[i].className = 'list active'
+			}
+		}
+
+
+
+		hamburger.addEventListener("click", function () {
+			wrapper.classList.add("active");
+		})
+
+		backdrop.addEventListener("click", function () {
+			wrapper.classList.remove("active");
+		})
+	</script>
+
+</body>
+
+</html>

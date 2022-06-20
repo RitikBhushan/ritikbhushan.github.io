@@ -1,0 +1,60 @@
+@import url('styles.css');
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    padding:1rem;
+    color:rgb(19, 18, 68);
+
+}
+.heading::after{
+    content: '';
+    background: #ff4d73;
+    display: block;
+    height: 3px;
+    width: 120px;
+    margin: 20px auto;
+}
+.education .box-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:2rem 1rem;
+}
+
+.education .box-container .box{
+    width:22rem;
+    height: 15rem;
+    padding:0 2rem;
+    
+    padding-bottom: 4rem;
+    border-left: .2rem solid rgb(235, 27, 83);
+}
+
+.education .box-container .box .year{
+    font-size: 2rem;
+    color:rgb(76, 133, 169);
+    position: relative;
+}
+
+.education .box-container .box .year::before{
+    content:'';
+    position: absolute;
+    top:.3rem; left: -3.1rem;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background:rgb(98, 98, 98);
+}
+
+.education .box-container .box h3{
+    font-size: 1.6rem;
+    color:rgb(24, 16, 49);
+    padding-top: 1rem;
+}
+
+.education .box-container .box p{
+    font-size: 1rem;
+    color:rgb(112, 112, 112);
+    padding: 1rem 0;
+}
