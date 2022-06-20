@@ -40,7 +40,7 @@
    
 }
 .textm h2{
-    /* font-size: 29px; */
+    font-size: 22px;
 }
 .text-anim{
     display: flex;
@@ -53,7 +53,8 @@
 	overflow: auto;
 }
 .textt{
-    font-size: 24px;
+    font-size: 22px;
+  
 }
 .photom{
     width: auto;

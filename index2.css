@@ -267,5 +267,8 @@
         width: 140px;
         margin: 10px 20px;
     }
+    .card__image {
+        width: 97%;
+    }
     
   }
